@@ -1,4 +1,3 @@
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -239,7 +238,7 @@ function search_video(query, cb) {
 
 
 const adminprefix = "AA";  
-const devs = ['269031102340005888','292921035060281354'];  
+const devs = ['269031102340005888','464093230875672576'];  
 client.on('message', message => {  
   var argresult = message.content.split(` `).slice(1).join(' ');  
     if (!devs.includes(message.author.id)) return;  
@@ -301,10 +300,10 @@ ${prefix}come
 ════════**ADMIN**══════
 ${prefix}${prefix}setgame══♔لتغيير حاله البوت
 ${prefix}${prefix}setname══♔لتغيير اسم البوت
-${prefix}${prefix}setavatar♔لتغيير صوره البوت
+${prefix}${prefix}setavatar═♔لتغيير صوره البوت
 ${prefix}${prefix}setT═════♔لتغيير تويتش البوت
 ══════════════════════
-BOT.78.#3261
+BOT.By:78.#3261
 
  `)  
   
@@ -317,7 +316,7 @@ BOT.78.#3261
             message.react("🅰")
         let embed = new Discord.RichEmbed()
      .setColor("#000000")
-     .addField("by: 78.#3261")
+     .addField( "✉ |By:78.#3261")
 
         
         
@@ -325,3 +324,8 @@ BOT.78.#3261
        }
    });
    
+	  client.on("message", (message) => {
+  if (message.content.startsWith("fkio")) {
+    message.channel.send("udf");
+  }
+});
