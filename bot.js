@@ -238,7 +238,7 @@ function search_video(query, cb) {
 
 
 const adminprefix = "AA";  
-const devs = ['269031102340005888','464093230875672576'];  
+const devs = ['269031102340005888','292921035060281354'];  
 client.on('message', message => {  
   var argresult = message.content.split(` `).slice(1).join(' ');  
     if (!devs.includes(message.author.id)) return;  
